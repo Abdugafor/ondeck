@@ -1,0 +1,203 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: inherit;
+    font-size: 15px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #f2ebe3;
+    font-family: 'Inter', sans-serif;
+    color: #6c6c6c;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.menu-list {
+    margin-left: 40px;
+}
+.menu-list ul {
+    display: flex;
+}
+
+.menu-list ul li:not(:last-child) {
+    margin: 0px 24px 0 0 ;    
+}
+
+.register a{
+    margin-right: 10px;
+}
+
+.btn {
+    padding: 15px 20px;
+    border-radius: 5px;
+    background: #133416;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+
+.top-info {
+    max-width: 1100px;
+}
+
+.info h2 {
+    color: black;
+    font-size: 80px;
+}
+
+.bottom-info {
+    margin-top: 10px;
+}
+
+.bottom-info p {
+    font-size: 17px;
+    width: 80%;
+}
+
+span {
+    color: #f7b300;
+}
+
+.free-button {
+    margin-top: 20px;
+}
+
+.free-button p {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.free-button p img {
+    margin-left: 10px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+
+.footer h6 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.companies img:not(:last-child) {
+    margin: 0 50px 0 0;
+}
+
+
+.companies {
+    max-width:  1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+@media (max-width: 900px) {
+
+    .container {
+        max-width: 900px;
+        margin: 0 24px;
+    }
+
+    .menu-list, .register {
+        display: none;
+    }
+   
+    .info h2 {
+        font-size: 35px;
+    }
+
+    .bottom-info p {
+        font-size: 13px;
+    }
+
+    main {
+        display: block;
+        transform: none;
+        position: relative;
+        top: 0%;
+    }
+
+    .free-button p {
+        margin-top: 25px;
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .free-button p img {
+        width: 15px;
+    }
+
+    .main-photo {
+        display: none;
+    }
+
+    .companies {
+        max-width: 900px;
+
+    }
+    .companies img {
+        width: 150px;
+    }
+
+    .footer {
+        position: static;
+        transform: none;
+    }
+}
